@@ -1,0 +1,196 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+header {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+body {
+  height: 100vh;
+}
+nav li {
+  display: inline-block;
+  padding: 25px 7px;
+  border: 10px;
+  margin-left: 15px;
+}
+ul a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul a:hover {
+  color: rgb(221, 0, 255);
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 26, 26);
+}
+footer a {
+  color: rgb(240, 243, 242);
+  list-style: none;
+  margin: 15px;
+}
+/*form contacto*/
+.formulario {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.mapaPosicion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+form {
+  background-color: rgba(128, 4, 101, 0.885);
+  padding: 30px;
+}
+form input {
+  width: 50%;
+  font-size: 25px;
+  background-color: transparent;
+  color: black;
+  border-bottom: 3px solid black;
+}
+h2 form {
+  text-align: center;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline green;
+}
+form input::placeholder {
+  color: black;
+}
+form textarea {
+  width: 50%;
+  background-color: transparent;
+  border-bottom: 3px solid black;
+}
+button {
+  font-size: 25px;
+  width: 50%;
+  background-color: rgba(230, 154, 217, 0.926);
+}
+
+iframe .mapa {
+  display: flex;
+  flex-direction: column;
+}
+/*seccion inicio imagen*/
+
+.seccionInicio {
+  display: flex;
+  background-color: black;
+}
+.imagenNosotros {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+/*inicio seccion imagen y parrafo*/
+.subtitulo {
+  display: flex;
+  align-items: center;
+}
+.quienesSomos {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.contenidoInicio .imgInicio {
+  width: 70%;
+}
+.parrafoInicio {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+/*galeria */
+.bodyGaleria {
+  background-color: black;
+}
+.img-galeria {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-galeria {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+.contenedor-galeria {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px;
+}
+
+.img-galeria1 {
+  height: 600px;
+  width: 600px;
+}
+.subtitulo-g {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+}
+/*servicios*/
+.img-servicios {
+  width: 30%;
+  height: 50%x; /*hay una x que no se de que es*/
+  object-fit: cover;
+}
+/*promociones*/
+.main-promociones {
+  width: 90%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+.promociones {
+  height: 30%;
+  width: 30%;
+}
+.promociones .img-promociones {
+  width: 700px;
+  height: 700px;
+}
+/*contacto*/
+.bodyContacto {
+  background-color: black rgba(0, 0, 0, 0.683);
+}
+
+/*medias mobile*/
+@media only screen and(max-width: 481px) {
+  body {
+    background-color: rgb(112, 142, 144);
+  }
+}
+
+/*medias tablet*/
+@media only screen and (max-width: 480px) and (max-width: 980px) {
+  .bodyPromociones {
+    background-color: black;
+  }
+}
+
+/*media desktop*/
+@media only screen and (min-width: 980px) {
+  .bodyGaleria {
+    background-color: dimgray;
+  }
+}
